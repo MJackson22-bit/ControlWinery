@@ -1,0 +1,13 @@
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\bin\Debug\PrototipoV1.exe.config
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\bin\Debug\PrototipoV1.exe
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\bin\Debug\PrototipoV1.pdb
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.csproj.AssemblyReference.cache
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.Form1.resources
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.NuevoProducto.resources
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.Properties.Resources.resources
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.csproj.GenerateResource.cache
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.csproj.CoreCompileInputs.cache
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.exe
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.pdb
+C:\Users\Jackson\Documents\Análisis y Diseño de Información\PrototipoV1\PrototipoV1\obj\Debug\PrototipoV1.ModificarPrecio.resources

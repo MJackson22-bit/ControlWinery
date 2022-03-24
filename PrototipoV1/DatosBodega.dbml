@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bd_bodega" Class="DatosBodegaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SANSEPI0L;Initial Catalog=bd_bodega;Integrated Security=True" SettingsObjectName="PrototipoV1.Properties.Settings" SettingsPropertyName="bd_bodegaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Producto" Member="Producto">
+    <Type Name="Producto">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Precio" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Unidades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medida" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ultVenta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Producto_Precio" Member="Precio1" ThisKey="Codigo" OtherKey="Codigo" Type="Precio" />
+      <Association Name="Producto_Impuesto" Member="Impuesto" ThisKey="Codigo" OtherKey="Codigo" Type="Impuesto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Precio" Member="Precio">
+    <Type Name="Precio">
+      <Column Name="id_precio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="precio1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precio2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precio3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precio4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precio_unidad" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precioUS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="venta_contiene" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="compra_contiene" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Producto_Precio" Member="Producto" ThisKey="Codigo" OtherKey="Codigo" Type="Producto" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Impuesto" Member="Impuesto">
+    <Type Name="Impuesto">
+      <Column Name="id_impuesto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="impuesto1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="impuesto2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="impuesto3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="impuesto4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Producto_Impuesto" Member="Producto" ThisKey="Codigo" OtherKey="Codigo" Type="Producto" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>
